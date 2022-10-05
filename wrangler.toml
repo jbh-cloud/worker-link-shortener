@@ -1,0 +1,19 @@
+name = "worker-link-shortener"
+main = "src/index.ts"
+compatibility_date = "2022-09-30"
+
+routes = [
+	{ pattern = "69420.cc", custom_domain = true }
+]
+
+kv_namespaces = [
+  { binding = "LINKS", id = "19f2213d1d5f445eb41fca2398a08245", preview_id = "19f2213d1d5f445eb41fca2398a08245"}
+]
+
+[vars]
+APP_HOSTNAME = "69420.cc"
+
+
+# The necessary secrets are:
+# - SENTRY_DSN
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
